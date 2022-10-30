@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="pruebamain.css">
+    <title>Todo Celular</title>
+</head>
+<body>
+    <section class="sec">
+        <header class= "newHeader" >
+            <a href="#"><img src="img/samsung_logo.png" class="logoSamsung"  alt="rellenar_despues"></a>
+            <ul class="navbarSamsung">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">Iphone</a></li>
+                <li><a href="#">Motorola</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Disfruta la Tecnologia <br><span>Samsung</span></h2>
+                <p>Samsung es la marca lider de telefonos celulares en el mundo y esto por una simple razon, por la gran calidad de sus productos. Algunas de las ventajas que te ofrece son: Versatilidad en tamaño, peso, caracteristicas y en calidad.</p>
+                <a href="#">Ver Productos Samsung</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="img/celular1.png" class="celular1"  alt="telefono1">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/celular1.png" onclick="imgSlider('img/celular1.png');changeBgColor('#01284d')" ></li>
+            <li><img src="img/celular2.png" onclick="imgSlider('img/celular2.png');changeBgColor('black')" alt="telefono x"></li>
+            <li><img src="img/celular3.png" onclick="imgSlider('img/celular3.png');changeBgColor('#b30539')" alt="telefono x"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" alt="facebook_logo"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="twitter_logo"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="instagram_logo"></a></li>
+        </ul>
+
+    </section>
+
+    <script>
+
+        function imgSlider(anything){
+            document.querySelector('.celular1').src = anything;
+        }
+        function changeBgColor (color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color ;
+        }
+
+    </script>
+    <footer>
+        <div class="contenedor-footer">
+        
+             <img src="img/celular1" alt="Logo" id="logo1" width="60">
+             <h1>Buenos Aires 1580, CABA, Córdoba, Argentina</h1>
+             <h2>+54 9 113578691</h2>
+             <a href="mailto:todocelular@gmail.com"><h2>todocelular@gmail.com</h2></a>    
+             <h3 class="copyright">Copyright © TODO CELULAR 2022 - Developed by Grupo 3</h3> 
+
+
+        </div>
+    </footer>
+
+</body>
+</html>
